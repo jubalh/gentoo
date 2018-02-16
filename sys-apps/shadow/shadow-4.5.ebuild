@@ -34,7 +34,8 @@ RDEPEND="${RDEPEND}
 	pam? ( >=sys-auth/pambase-20150213 )"
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-4.1.3-dots-in-usernames.patch
+	"${FILESDIR}/${PN}-4.1.3-dots-in-usernames.patch"
+	"${FILESDIR}/${PN}-CVE-2018-7169.patch"
 )
 
 src_prepare() {
